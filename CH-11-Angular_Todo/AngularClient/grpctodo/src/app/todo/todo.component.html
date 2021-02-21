@@ -1,0 +1,21 @@
+<div>
+  <h3 style="text-align: center;">TODO gRPC Client</h3>
+  <table style="text-align: center;margin-left: 10px;">
+    <tr>
+      <th>
+         <input [(ngModel)]="inputField" class="mr-1" placeholder="Todo Item">
+      </th>
+      <th>
+        <button (click)="addTodo()" class="btn btn-primary">Add Todo</button>
+      </th>
+    </tr>
+    <tr *ngFor="let todo of todos">
+      <td>
+        <span>{{todo.task}}</span>
+      </td>
+      <td>
+        <button (click)="deleteTodo(todo)" class="btn-danger"> DELETE </button>
+      </td>
+    </tr>
+  </table>
+</div>

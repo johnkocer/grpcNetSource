@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{509A7A91-3DE8-4FF3-97BE-92DE08549992}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Proto", "Proto", "{A0FA21F2-40F5-4BC0-85D1-75C79EAF9CED}"
+	ProjectSection(SolutionItems) = preProject
+		Client\Client.csproj = Client\Client.csproj
+		Proto\hello.proto = Proto\hello.proto
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csproj", "{80B1F9E2-0947-464F-83EC-5A7F852FB081}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{509A7A91-3DE8-4FF3-97BE-92DE08549992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{509A7A91-3DE8-4FF3-97BE-92DE08549992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{509A7A91-3DE8-4FF3-97BE-92DE08549992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{509A7A91-3DE8-4FF3-97BE-92DE08549992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80B1F9E2-0947-464F-83EC-5A7F852FB081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80B1F9E2-0947-464F-83EC-5A7F852FB081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80B1F9E2-0947-464F-83EC-5A7F852FB081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80B1F9E2-0947-464F-83EC-5A7F852FB081}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D9EC7EC-9DE5-4C00-8D65-7278501F3AB7}
+	EndGlobalSection
+EndGlobal

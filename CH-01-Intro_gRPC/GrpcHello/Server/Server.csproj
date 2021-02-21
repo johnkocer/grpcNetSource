@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Kocer.Server</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Protobuf Include="..\Proto\hello.proto" GrpcServices="Server" Link="Protos\hello.proto" />
+
+    <PackageReference Include="Grpc.AspNetCore" Version="2.34.0" />
+
+    <PackageReference Include="Grpc.AspNetCore.Server.Reflection" Version="2.35.0" />
+  </ItemGroup>
+</Project>

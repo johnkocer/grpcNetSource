@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "Server";
+
+package add;
+
+service AddService {
+  rpc Add (AddRequest) returns (AddReply);
+}
+
+message AddRequest {
+  float x = 1;
+  float y = 2;
+}
+
+message AddReply {
+  float sum = 1;
+}

@@ -1,0 +1,29 @@
+syntax = "proto3";
+option csharp_namespace = "TodosServer";
+package todos;
+
+message Empty{}
+
+
+message TodoId {
+	string id = 1;
+}
+
+message Todo {
+	string id = 1;
+	string task = 2;
+}
+
+message TodoList {
+	repeated Todo todos = 1;
+}
+
+message DeleteResponse {
+	string message = 1;
+}  
+
+service TodoService {
+	rpc Insert(Todo) returns (Todo) {}
+	rpc Delete(TodoId) returns (DeleteResponse) {}
+	rpc GetAll(Empty) returns (TodoList) {}
+}
